@@ -1,0 +1,74 @@
+[
+  {
+    "plantId": 1,
+    "plantName": "Snake Plant",
+    "category": "Air Purifier",
+    "price": 18,
+    "rating": 4.8,
+    "availableStock": 10,
+    "careLevel": "Easy",
+    "description": "A hardy plant that purifies indoor air and thrives in low light.",
+    "image": "https://i.ibb.co.com/QvYZJMRH/Screenshot-2025-10-22-114606.png",
+    "providerName": "UrbanGreen Studio"
+  },
+  {
+    "plantId": 2,
+    "plantName": "Peace Lily",
+    "category": "Flowering",
+    "price": 22,
+    "rating": 4.6,
+    "availableStock": 8,
+    "careLevel": "Medium",
+    "description": "An elegant indoor plant known for its white blooms and air-purifying ability.",
+    "image": "https://i.ibb.co.com/p8VZfJc/Screenshot-2025-10-22-114703.png",
+    "providerName": "NatureNest"
+  },
+  {
+    "plantId": 3,
+    "plantName": "Aloe Vera",
+    "category": "Succulent",
+    "price": 15,
+    "rating": 4.9,
+    "availableStock": 12,
+    "careLevel": "Easy",
+    "description": "A low-maintenance succulent that stores water in its thick leaves, great for skin care too.",
+    "image": "https://i.ibb.co.com/vC13qjmY/Screenshot-2025-10-22-114747.png",
+    "providerName": "GreenLeaf Garden"
+  },
+  {
+    "plantId": 4,
+    "plantName": "ZZ Plant",
+    "category": "Air Purifier",
+    "price": 25,
+    "rating": 4.7,
+    "availableStock": 9,
+    "careLevel": "Easy",
+    "description": "A glossy, drought-tolerant plant perfect for low-light spaces and office environments.",
+    "image": "https://i.ibb.co.com/MDXbGXz1/Screenshot-2025-10-22-114719.png",
+    "providerName": "UrbanGreen Studio"
+  },
+  {
+    "plantId": 5,
+    "plantName": "Spider Plant",
+    "category": "Hanging",
+    "price": 16,
+    "rating": 4.5,
+    "availableStock": 14,
+    "careLevel": "Easy",
+    "description": "A classic indoor favorite with long striped leaves and excellent air-purifying properties.",
+    "image": "https://i.ibb.co.com/396mRQHq/Screenshot-2025-10-22-114853.png",
+    "providerName": "LeafyWorld"
+  },
+  {
+    "plantId": 6,
+    "plantName": "Rubber Plant",
+    "category": "Foliage",
+    "price": 28,
+    "rating": 4.9,
+    "availableStock": 6,
+    "careLevel": "Medium",
+    "description": "A bold indoor plant with thick glossy leaves, adds a modern tropical touch to any room.",
+    "image": "https://i.ibb.co.com/pv25kkqh/Screenshot-2025-10-22-114926.png",
+    "providerName": "EcoRoots"
+  }
+]
