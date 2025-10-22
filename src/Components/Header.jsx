@@ -1,9 +1,11 @@
-import React from "react";
+import React, { use } from "react";
 import logoImg from "../assets/logo.png";
 import "./styles.css";
-import { NavLink } from "react-router";
+import { Link, NavLink } from "react-router";
+import { AuthContext } from "../Provider/AuthContext";
 
 const Header = () => {
+  const { user } = use(AuthContext);
   const links = (
     <>
       <li className=" mr-3">
@@ -57,7 +59,13 @@ const Header = () => {
         <ul className="menu menu-horizontal px-1">{links}</ul>
       </div>
       <div className="navbar-end">
-        <a className="btn">Button</a>
+        {user ? (
+          <button className="btn">Log Out</button>
+        ) : (
+          <Link className="btn" to="/auth/login">
+            Login
+          </Link>
+        )}
       </div>
     </div>
   );
