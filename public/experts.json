@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Sophia Green",
+    "specialization": "Indoor Plant Specialist",
+    "image": "https://i.ibb.co.com/v60PL5vB/chumki.webp"
+  },
+  {
+    "id": 2,
+    "name": "Liam Bloom",
+    "specialization": "Soil & Fertilizer Expert",
+    "image": "https://i.ibb.co.com/6RS2fC5X/Screenshot-2025-10-22-212435.png"
+  },
+  {
+    "id": 3,
+    "name": "Ava Leafson",
+    "specialization": "Succulent & Cactus Care",
+    "image": "https://i.ibb.co.com/1Yvm5fPB/Screenshot-2025-10-22-212124.png"
+  },
+  {
+    "id": 4,
+    "name": "Ethan Woods",
+    "specialization": "Plant Environment Designer",
+    "image": "https://i.ibb.co.com/wZbPtv6S/Screenshot-2025-10-22-211849.png"
+  }
+]
