@@ -10,6 +10,7 @@ const router = createBrowserRouter([
       {
         path: "",
         Component: Home,
+        loader: () => fetch("/plant.json"),
       },
     ],
   },

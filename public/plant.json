@@ -70,5 +70,29 @@
     "description": "A bold indoor plant with thick glossy leaves, adds a modern tropical touch to any room.",
     "image": "https://i.ibb.co.com/pv25kkqh/Screenshot-2025-10-22-114926.png",
     "providerName": "EcoRoots"
+  },
+  {
+    "plantId": 7,
+    "plantName": "Monstera Deliciosa",
+    "category": "Foliage",
+    "price": 32,
+    "rating": 4.8,
+    "availableStock": 7,
+    "careLevel": "Medium",
+    "description": "Known as the Swiss Cheese Plant, it features large perforated leaves and thrives in bright, indirect light.",
+    "image": "https://i.ibb.co.com/PsN2s1dh/Screenshot-2025-10-22-191342.png",
+    "providerName": "TropicalBloom"
+  },
+  {
+    "plantId": 8,
+    "plantName": "Lucky Bamboo",
+    "category": "Decorative",
+    "price": 20,
+    "rating": 4.6,
+    "availableStock": 11,
+    "careLevel": "Easy",
+    "description": "A symbol of good fortune and harmony, easy to grow in water or soil with minimal sunlight.",
+    "image": "https://i.ibb.co.com/TMNsXkRN/Screenshot-2025-10-22-191401.png",
+    "providerName": "ZenLeaf Studio"
   }
 ]

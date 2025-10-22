@@ -11,9 +11,9 @@ import "swiper/css/pagination";
 const slidePromise = fetch("/HeroSlide.json").then((res) => res.json());
 const HeroSection = () => {
   const slides = use(slidePromise);
-  console.log(slides);
+  //   console.log(slides);
   return (
-    <div>
+    <div className="pt-20 mb-7">
       <Swiper
         spaceBetween={30}
         centeredSlides
