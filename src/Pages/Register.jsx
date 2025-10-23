@@ -6,7 +6,8 @@ import { toast } from "react-toastify";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 const Register = () => {
-  const { createUser, setUser, signInWithGoogle } = use(AuthContext);
+  const { createUser, setUser, signInWithGoogle, updateUser } =
+    use(AuthContext);
   const [passwordError, setPasswordError] = useState("");
   const navigate = useNavigate();
   const [showPassword, setShowPassword] = useState(false);
@@ -21,6 +22,8 @@ const Register = () => {
     // const photo = e.target.photo.value;
     const email = e.target.email.value;
     const password = e.target.password.value;
+    const name = e.target.name.value;
+    const photo = e.target.photo.value;
     const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z]).{6,}$/;
     if (!passwordRegex.test(password)) {
       setPasswordError(
@@ -33,8 +36,16 @@ const Register = () => {
     createUser(email, password)
       .then((result) => {
         console.log(result.user);
-        setUser(result.user);
+        // setUser(result.user);
         navigate("/");
+        updateUser({ displayName: name, photoURL: photo })
+          .then(() => {
+            setUser({ ...result.user, displayName: name, photoURL: photo });
+          })
+          .catch((error) => {
+            console.log(error);
+            setUser(result.user);
+          });
       })
       .catch((error) => {
         console.log(error);

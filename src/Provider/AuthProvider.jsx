@@ -8,6 +8,7 @@ import {
   signInWithEmailAndPassword,
   signInWithPopup,
   signOut,
+  updateProfile,
 } from "firebase/auth";
 import { auth } from "../Firebase/Firebase.config";
 
@@ -47,6 +48,10 @@ const AuthProvider = ({ children }) => {
     return sendPasswordResetEmail(auth, email);
   };
 
+  const updateUser = (updatedData) => {
+    return updateProfile(auth.currentUser, updatedData);
+  };
+
   const authData = {
     user,
     setUser,
@@ -57,6 +62,7 @@ const AuthProvider = ({ children }) => {
     setLoading,
     signInWithGoogle,
     forgetPassword,
+    updateUser,
   };
   return <AuthContext value={authData}>{children}</AuthContext>;
 };
