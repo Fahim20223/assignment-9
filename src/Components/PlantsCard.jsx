@@ -1,7 +1,8 @@
 import React from "react";
+import { Link } from "react-router";
 
 const PlantsCard = ({ plant }) => {
-  const { plantName, price, rating, image } = plant;
+  const { plantId, plantName, price, rating, image } = plant;
 
   return (
     <div className="bg-white rounded-2xl shadow-md hover:shadow-xl hover:scale-105 transition-transform duration-200 ease-out p-5 hover:-translate-y-2">
@@ -15,9 +16,11 @@ const PlantsCard = ({ plant }) => {
         <p className="text-gray-600">💲{price}</p>
         <p className="text-yellow-500">⭐ {rating}</p>
       </div>
-      <button className="mt-3 w-full py-2 bg-linear-to-r from-green-500 to-green-700 text-white rounded-lg">
-        View Details
-      </button>
+      <Link to={`/card-details/${plantId}`}>
+        <button className="mt-3 w-full py-2 bg-linear-to-r from-green-500 to-green-700 text-white rounded-lg btn">
+          View Details
+        </button>
+      </Link>
     </div>
   );
 };

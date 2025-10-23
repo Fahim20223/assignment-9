@@ -12,6 +12,7 @@ const Login = () => {
     signInUser(email, password)
       .then((result) => {
         console.log(result.user);
+        // e.target.reset();
       })
       .catch((error) => {
         console.log(error);
@@ -41,7 +42,9 @@ const Login = () => {
               <div>
                 <a className="link link-hover">Forgot password?</a>
               </div>
-              <button className="btn btn-neutral mt-4">Login</button>
+              <button type="submit" className="btn btn-neutral mt-4">
+                Login
+              </button>
             </fieldset>
             <div className="divider divider-success">OR</div>
             <button className="btn btn-outline w-full btn-secondary">

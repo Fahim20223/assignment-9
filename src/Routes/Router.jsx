@@ -6,6 +6,7 @@ import Profile from "../Components/Profile";
 import AuthLayout from "../Layouts/AuthLayout";
 import Login from "../Pages/Login";
 import Register from "../Pages/Register";
+import PlantsDetails from "../Pages/PlantsDetails";
 
 const router = createBrowserRouter([
   {
@@ -43,7 +44,12 @@ const router = createBrowserRouter([
     ],
   },
   {
-    path: "*",
+    path: "/card-details/:id",
+    element: <PlantsDetails></PlantsDetails>,
+    loader: () => fetch("/plant.json"),
+  },
+  {
+    path: "/*",
     element: <h2>error 404</h2>,
   },
 ]);

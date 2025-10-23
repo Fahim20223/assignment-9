@@ -7,7 +7,7 @@
     "rating": 4.8,
     "availableStock": 10,
     "careLevel": "Easy",
-    "description": "A hardy plant that purifies indoor air and thrives in low light.",
+    "description": "The Snake Plant is a hardy indoor plant that can survive in low light and requires minimal care. Known for its striking upright leaves, it effectively purifies indoor air by removing toxins and improving oxygen levels. Perfect for bedrooms, offices, or any indoor space, it adds a modern touch while keeping the air fresh. It can tolerate occasional neglect, making it ideal for beginners or busy plant owners.",
     "image": "https://i.ibb.co.com/QvYZJMRH/Screenshot-2025-10-22-114606.png",
     "providerName": "UrbanGreen Studio"
   },
@@ -19,7 +19,7 @@
     "rating": 4.6,
     "availableStock": 8,
     "careLevel": "Medium",
-    "description": "An elegant indoor plant known for its white blooms and air-purifying ability.",
+    "description": "The Peace Lily is an elegant indoor plant famous for its glossy green leaves and pristine white blooms. It thrives in indirect sunlight and helps remove harmful toxins from the air. Besides enhancing air quality, it adds a calming and decorative element to your home or office. Its graceful flowers bloom periodically, giving your space a touch of sophistication and serenity. Ideal for moderate-care plant enthusiasts.",
     "image": "https://i.ibb.co.com/p8VZfJc/Screenshot-2025-10-22-114703.png",
     "providerName": "NatureNest"
   },
@@ -31,7 +31,7 @@
     "rating": 4.9,
     "availableStock": 12,
     "careLevel": "Easy",
-    "description": "A low-maintenance succulent that stores water in its thick leaves, great for skin care too.",
+    "description": "Aloe Vera is a popular succulent known for its medicinal properties and low maintenance needs. Its thick, fleshy leaves store water, allowing it to survive in dry conditions. Beyond being a beautiful indoor plant, Aloe Vera gel can be used for skin care, soothing burns, and moisturizing. It prefers bright, indirect sunlight and occasional watering, making it perfect for beginners or those with limited time for plant care.",
     "image": "https://i.ibb.co.com/vC13qjmY/Screenshot-2025-10-22-114747.png",
     "providerName": "GreenLeaf Garden"
   },
@@ -43,7 +43,7 @@
     "rating": 4.7,
     "availableStock": 9,
     "careLevel": "Easy",
-    "description": "A glossy, drought-tolerant plant perfect for low-light spaces and office environments.",
+    "description": "The ZZ Plant is a glossy, low-maintenance plant perfect for bright or low-light environments. Its thick stems and waxy leaves store water, allowing it to survive periods of neglect. The ZZ Plant purifies indoor air and adds a sophisticated tropical touch to your home or office. It grows slowly but steadily, making it a long-lasting decorative companion that is resistant to pests and disease.",
     "image": "https://i.ibb.co.com/MDXbGXz1/Screenshot-2025-10-22-114719.png",
     "providerName": "UrbanGreen Studio"
   },
@@ -55,7 +55,7 @@
     "rating": 4.5,
     "availableStock": 14,
     "careLevel": "Easy",
-    "description": "A classic indoor favorite with long striped leaves and excellent air-purifying properties.",
+    "description": "Spider Plant is a classic indoor favorite known for its long, arching green leaves with white stripes. It thrives in indirect sunlight and is excellent at purifying indoor air. This resilient plant produces small 'spiderettes' that can be propagated easily, making it a fun plant for beginners or children. Perfect for hanging baskets or as a tabletop centerpiece, it adds liveliness and greenery to any room.",
     "image": "https://i.ibb.co.com/396mRQHq/Screenshot-2025-10-22-114853.png",
     "providerName": "LeafyWorld"
   },
@@ -67,7 +67,7 @@
     "rating": 4.9,
     "availableStock": 6,
     "careLevel": "Medium",
-    "description": "A bold indoor plant with thick glossy leaves, adds a modern tropical touch to any room.",
+    "description": "The Rubber Plant is a bold and elegant indoor plant with large, glossy leaves that bring a tropical vibe to any space. It prefers bright, indirect light but can tolerate moderate shade. Rubber Plants improve air quality and grow into impressive specimens with minimal care. Water occasionally and maintain good humidity to keep its leaves shiny and healthy. Ideal for plant lovers seeking a statement indoor foliage.",
     "image": "https://i.ibb.co.com/pv25kkqh/Screenshot-2025-10-22-114926.png",
     "providerName": "EcoRoots"
   },
@@ -79,7 +79,7 @@
     "rating": 4.8,
     "availableStock": 7,
     "careLevel": "Medium",
-    "description": "Known as the Swiss Cheese Plant, it features large perforated leaves and thrives in bright, indirect light.",
+    "description": "Monstera Deliciosa, also called the Swiss Cheese Plant, is a stunning indoor plant recognized for its large, perforated leaves. It thrives in bright, indirect sunlight and moderate watering. This plant adds a bold tropical touch to your living space and is excellent for interior decor. Its unique leaves and climbing habit make it a favorite for plant enthusiasts looking for dramatic foliage and easy-to-care elegance.",
     "image": "https://i.ibb.co.com/PsN2s1dh/Screenshot-2025-10-22-191342.png",
     "providerName": "TropicalBloom"
   },
@@ -91,7 +91,7 @@
     "rating": 4.6,
     "availableStock": 11,
     "careLevel": "Easy",
-    "description": "A symbol of good fortune and harmony, easy to grow in water or soil with minimal sunlight.",
+    "description": "Lucky Bamboo is a popular decorative plant believed to bring good luck and positive energy to your home or office. It grows well in water or soil and requires minimal sunlight. Its unique stalks and vibrant green leaves make it a beautiful addition to desks, shelves, or living spaces. Easy to care for, it’s perfect for beginners or those seeking an attractive indoor plant with symbolic meaning.",
     "image": "https://i.ibb.co.com/TMNsXkRN/Screenshot-2025-10-22-191401.png",
     "providerName": "ZenLeaf Studio"
   }

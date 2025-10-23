@@ -21,7 +21,7 @@ const Register = () => {
       });
   };
   return (
-    <div className="flex justify-center min-h-screen items-center">
+    <div className="flex justify-center min-h-screen items-center py-8">
       <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl ">
         <div className="card-body">
           <h1 className="text-2xl md:text-3xl font-bold text-center">
@@ -64,7 +64,9 @@ const Register = () => {
               <div>
                 <a className="link link-hover">Forgot password?</a>
               </div>
-              <button className="btn btn-neutral mt-4">Register</button>
+              <button type="submit" className="btn btn-neutral mt-4">
+                Register
+              </button>
             </fieldset>
             <div className="divider divider-success">OR</div>
             <button className="btn btn-outline w-full btn-secondary">
