@@ -3,13 +3,14 @@ import logoImg from "../assets/logo.png";
 import "./styles.css";
 import { Link, NavLink } from "react-router";
 import { AuthContext } from "../Provider/AuthContext";
+import { toast } from "react-toastify";
 
 const Header = () => {
   const { user, signOutUser } = use(AuthContext);
   const handleSignOut = () => {
     signOutUser()
       .then(() => {
-        alert("You Logged out successfully");
+        toast.success("You Logged out successfully");
       })
       .catch((error) => {
         console.log(error);

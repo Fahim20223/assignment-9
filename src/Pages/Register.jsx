@@ -3,11 +3,18 @@ import { FcGoogle } from "react-icons/fc";
 import { Link, useNavigate } from "react-router";
 import { AuthContext } from "../Provider/AuthContext";
 import { toast } from "react-toastify";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 const Register = () => {
-  const { createUser, setUser } = use(AuthContext);
+  const { createUser, setUser, signInWithGoogle } = use(AuthContext);
   const [passwordError, setPasswordError] = useState("");
   const navigate = useNavigate();
+  const [showPassword, setShowPassword] = useState(false);
+  const handleShowPassword = (e) => {
+    e.preventDefault();
+    setShowPassword(!showPassword);
+  };
+  // const location = useLocation();
   const handleRegister = (e) => {
     e.preventDefault();
     // const name = e.target.name.value;
@@ -31,9 +38,21 @@ const Register = () => {
       })
       .catch((error) => {
         console.log(error);
-        toast.success("Invalid Signup");
+        toast.success(error.message);
       });
   };
+
+  const handleGoogleSignIn = () => {
+    signInWithGoogle()
+      .then((result) => {
+        console.log(result.user);
+        navigate("/");
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
+
   return (
     <div className="flex justify-center min-h-screen items-center py-8 bg-[#f4f4f4]">
       <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl ">
@@ -69,12 +88,20 @@ const Register = () => {
               />
               {/* Password */}
               <label className="label">Password</label>
-              <input
-                name="password"
-                type="password"
-                className="input"
-                placeholder="Password"
-              />
+              <div className="relative">
+                <input
+                  name="password"
+                  type={showPassword ? "text" : "password"}
+                  className="input"
+                  placeholder="Password"
+                />
+                <button
+                  onClick={handleShowPassword}
+                  className="btn btn-xs absolute top-2 right-6"
+                >
+                  {showPassword ? <FaEyeSlash /> : <FaEye />}
+                </button>
+              </div>
               {passwordError && (
                 <p className="text-xs text-error">{passwordError}</p>
               )}
@@ -86,7 +113,10 @@ const Register = () => {
               </button>
             </fieldset>
             <div className="divider divider-success">OR</div>
-            <button className="btn btn-outline w-full btn-secondary">
+            <button
+              onClick={handleGoogleSignIn}
+              className="btn btn-outline w-full btn-secondary"
+            >
               <FcGoogle size={20}></FcGoogle> Signup With Google
             </button>
             <p className="font-bold mt-3">
