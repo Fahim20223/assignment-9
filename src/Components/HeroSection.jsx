@@ -13,7 +13,7 @@ const HeroSection = () => {
   const slides = use(slidePromise);
   //   console.log(slides);
   return (
-    <div className="pt-20 mb-7">
+    <div className="pt-20 mb-7 ">
       <Swiper
         spaceBetween={30}
         centeredSlides
