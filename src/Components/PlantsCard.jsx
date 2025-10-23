@@ -4,7 +4,7 @@ const PlantsCard = ({ plant }) => {
   const { plantName, price, rating, image } = plant;
 
   return (
-    <div className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all p-5">
+    <div className="bg-white rounded-2xl shadow-md hover:shadow-xl hover:scale-105 transition-transform duration-200 ease-out p-5 hover:-translate-y-2">
       <img
         src={image}
         alt={plantName}

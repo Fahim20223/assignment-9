@@ -3,7 +3,7 @@ import React from "react";
 const AllPlantsShowCard = ({ plant }) => {
   const { plantName, price, rating, image } = plant;
   return (
-    <div className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all p-5">
+    <div className="bg-white rounded-2xl shadow-md hover:shadow-xl hover:scale-105 p-5 transition-transform duration-200 ease-out hover:-translate-y-2">
       <img
         src={image}
         alt={plantName}
