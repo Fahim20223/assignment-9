@@ -6,6 +6,7 @@ import RightAside from "./RightAside";
 import PlantsCareTips from "./PlantsCareTips";
 import PlantsExperts from "./PlantsExperts";
 import Plants from "./Plants";
+import PlantOfTheWeek from "./PlantOfTheWeek";
 
 const Home = () => {
   const data = useLoaderData();
@@ -19,11 +20,7 @@ const Home = () => {
           <PlantsCategory data={data}></PlantsCategory>
         </section>
       </section>
-      {/* <section>
-        <section className="w-11/12 mx-auto">
-          <Plants data={data}></Plants>
-        </section>
-      </section> */}
+      <PlantOfTheWeek data={data}></PlantOfTheWeek>
       <PlantsCareTips></PlantsCareTips>
       <PlantsExperts></PlantsExperts>
     </div>

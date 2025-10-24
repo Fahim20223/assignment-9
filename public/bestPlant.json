@@ -1,0 +1,14 @@
+[
+  {
+    "plantId": 1,
+    "plantName": "Monstera Deliciosa",
+    "category": "Foliage",
+    "price": 32,
+    "rating": 4.8,
+    "availableStock": 7,
+    "careLevel": "Medium",
+    "description": "Monstera Deliciosa, also called the Swiss Cheese Plant, is a stunning indoor plant recognized for its large, perforated leaves. It thrives in bright, indirect sunlight and moderate watering. This plant adds a bold tropical touch to your living space and is excellent for interior decor. Its unique leaves and climbing habit make it a favorite for plant enthusiasts looking for dramatic foliage and easy-to-care elegance.",
+    "image": "https://i.ibb.co.com/PsN2s1dh/Screenshot-2025-10-22-191342.png",
+    "providerName": "TropicalBloom"
+  }
+]
