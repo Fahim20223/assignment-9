@@ -9,11 +9,13 @@ import Register from "../Pages/Register";
 import PlantsDetails from "../Pages/PlantsDetails";
 import PrivateRoutes from "../PrivateRoutes/PrivateRoutes";
 import Loading from "../Pages/Loading";
+import Error from "../Pages/Error";
 
 const router = createBrowserRouter([
   {
     path: "/",
     Component: HomeLayout,
+    errorElement: <Error></Error>,
     children: [
       {
         path: "",
@@ -36,6 +38,7 @@ const router = createBrowserRouter([
   {
     path: "/auth",
     Component: AuthLayout,
+    errorElement: <Error></Error>,
     children: [
       {
         path: "/auth/login",
@@ -54,12 +57,13 @@ const router = createBrowserRouter([
         <PlantsDetails></PlantsDetails>
       </PrivateRoutes>
     ),
+    errorElement: <Error></Error>,
     loader: () => fetch("/plant.json"),
     hydrateFallbackElement: <Loading></Loading>,
   },
-  {
-    path: "/*",
-    element: <h2>error 404</h2>,
-  },
+  // {
+  //   path: "/*",
+  //   errorElement: <Error></Error>,
+  // },
 ]);
 export default router;
