@@ -1,0 +1,38 @@
+[
+  {
+    "id": "cust_001",
+    "name": "Mariam Akter",
+    "company": "Google",
+    "rating": 5,
+    "title": "Amazing Plant",
+    "review": "Absolutely love my Monstera! The leaves are vibrant and it adds so much life to my living room. Came well-packaged and healthy.",
+    "photo": "https://i.pravatar.cc/150?img=47"
+  },
+  {
+    "id": "cust_002",
+    "name": "Hasibul Karim",
+    "company": "IBM",
+    "rating": 4,
+    "title": "Great Indoor Plant",
+    "review": "Bought a Snake Plant for my office desk. It looks great and easy to maintain. Just wish it was a bit bigger.",
+    "photo": "https://i.pravatar.cc/150?img=23"
+  },
+  {
+    "id": "cust_003",
+    "name": "Nusrat Chowdhury",
+    "company": "Amazon",
+    "rating": 5,
+    "title": "Highly Recommended",
+    "review": "My Peace Lily arrived in perfect condition! The pot design was elegant and the plant bloomed within a week. Highly recommended.",
+    "photo": "https://i.pravatar.cc/150?img=15"
+  },
+  {
+    "id": "cust_004",
+    "name": "Arian Rahman",
+    "company": "Meta",
+    "rating": 4,
+    "title": "Beautiful and Fresh",
+    "review": "I got an Areca Palm for my bedroom. Looks really nice and freshens the air. Delivery took a bit long, but worth it.",
+    "photo": "https://i.pravatar.cc/150?img=32"
+  }
+]

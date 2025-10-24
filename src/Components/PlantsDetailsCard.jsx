@@ -21,6 +21,9 @@ const PlantsDetailsCard = ({ plants }) => {
           </p>
           <p className="font-semibold text-xl ">💲{plants.price}</p>
           <h3 className="text-xl font-semibold">⭐{plants.rating}</h3>
+          <div className="badge badge-secondary">
+            {plants.availableStock} stocks available
+          </div>
         </div>
       </div>
       <div className="p-7 bg-green-600 items-center w-96 h-70 mx-auto rounded-xl ">

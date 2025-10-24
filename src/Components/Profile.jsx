@@ -57,6 +57,7 @@ const Profile = () => {
                       type="text"
                       className="input"
                       placeholder="Name"
+                      defaultValue={user?.displayName}
                     />
                     {/* Photo URL */}
                     <label className="label">Photo URL</label>
@@ -65,6 +66,7 @@ const Profile = () => {
                       type="text"
                       className="input"
                       placeholder="photo URL"
+                      defaultValue={user?.photoURL}
                     />
                     <button type="submit" className="btn btn-primary">
                       Submit

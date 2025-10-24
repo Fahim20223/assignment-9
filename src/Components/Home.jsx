@@ -5,8 +5,9 @@ import { useLoaderData } from "react-router";
 import RightAside from "./RightAside";
 import PlantsCareTips from "./PlantsCareTips";
 import PlantsExperts from "./PlantsExperts";
-import Plants from "./Plants";
-import PlantOfTheWeek from "./PlantOfTheWeek";
+import CustomerReview from "./CustomerReview";
+// import Plants from "./Plants";
+// import PlantOfTheWeek from "./PlantOfTheWeek";
 
 const Home = () => {
   const data = useLoaderData();
@@ -20,7 +21,7 @@ const Home = () => {
           <PlantsCategory data={data}></PlantsCategory>
         </section>
       </section>
-      <PlantOfTheWeek data={data}></PlantOfTheWeek>
+      <CustomerReview></CustomerReview>
       <PlantsCareTips></PlantsCareTips>
       <PlantsExperts></PlantsExperts>
     </div>
