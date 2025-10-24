@@ -10,7 +10,7 @@ const HeroSection = () => {
   const slides = use(slidePromise);
 
   return (
-    <section className="relative w-full bg-linear-to-br from-green-100 via-white to-green-200 flex items-center justify-center overflow-hidden shadow-md">
+    <div className="relative w-full bg-linear-to-br from-green-100 via-white to-green-200 flex items-center justify-center overflow-hidden shadow-md pt-20">
       <Swiper
         spaceBetween={30}
         centeredSlides
@@ -57,7 +57,7 @@ const HeroSection = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-    </section>
+    </div>
   );
 };
 

@@ -38,9 +38,14 @@ const Register = () => {
         console.log(result.user);
         // setUser(result.user);
         navigate("/");
-        updateUser({ displayName: name, photoURL: photo })
+        updateUser({ displayName: name, photoURL: photo, email: email })
           .then(() => {
-            setUser({ ...result.user, displayName: name, photoURL: photo });
+            setUser({
+              ...result.user,
+              displayName: name,
+              photoURL: photo,
+              email: email,
+            });
           })
           .catch((error) => {
             console.log(error);

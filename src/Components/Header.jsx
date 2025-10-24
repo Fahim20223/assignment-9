@@ -1,16 +1,18 @@
 import React, { use } from "react";
 import logoImg from "../assets/logo.png";
 import "./styles.css";
-import { Link, NavLink } from "react-router";
+import { Link, NavLink, useNavigate } from "react-router";
 import { AuthContext } from "../Provider/AuthContext";
 import { toast } from "react-toastify";
 
 const Header = () => {
   const { user, signOutUser } = use(AuthContext);
+  const navigate = useNavigate();
   const handleSignOut = () => {
     signOutUser()
       .then(() => {
         toast.success("You Logged out successfully");
+        navigate("/");
       })
       .catch((error) => {
         console.log(error);
@@ -26,9 +28,11 @@ const Header = () => {
         <NavLink to="/plants">Plants</NavLink>
       </li>
 
-      <li>
-        <NavLink to="/profile">MY Profile</NavLink>
-      </li>
+      {user && (
+        <li>
+          <NavLink to="/profile">MY Profile</NavLink>
+        </li>
+      )}
     </>
   );
   return (
