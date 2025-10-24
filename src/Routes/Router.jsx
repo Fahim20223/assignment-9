@@ -8,6 +8,7 @@ import Login from "../Pages/Login";
 import Register from "../Pages/Register";
 import PlantsDetails from "../Pages/PlantsDetails";
 import PrivateRoutes from "../PrivateRoutes/PrivateRoutes";
+import Loading from "../Pages/Loading";
 
 const router = createBrowserRouter([
   {
@@ -18,11 +19,13 @@ const router = createBrowserRouter([
         path: "",
         Component: Home,
         loader: () => fetch("/plant.json"),
+        hydrateFallbackElement: <Loading></Loading>,
       },
       {
         path: "/plants",
         Component: Plants,
         loader: () => fetch("/plant.json"),
+        hydrateFallbackElement: <Loading></Loading>,
       },
       {
         path: "/profile",
@@ -52,6 +55,7 @@ const router = createBrowserRouter([
       </PrivateRoutes>
     ),
     loader: () => fetch("/plant.json"),
+    hydrateFallbackElement: <Loading></Loading>,
   },
   {
     path: "/*",
