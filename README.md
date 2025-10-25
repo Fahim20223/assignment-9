@@ -1,16 +1,53 @@
-# React + Vite
+# 🌿 GreenNest
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**GreenNest** is an elegant single-page web application designed for plant lovers who want to nurture and decorate their homes with healthy indoor plants.  
+It combines plant shopping, care guides, and expert consultations — all in one platform.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🏡 Purpose
 
-## React Compiler
+The main goal of **GreenNest** is to promote a greener and healthier lifestyle by helping users:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Explore and learn about various indoor plants.
+- Purchase plants directly from the platform.
+- Book online consultations with plant care experts.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🌐 Live URL
+
+👉 [Visit GreenNest Live](https://assignment-9-4089f.web.app/)
+
+---
+
+## ✨ Key Features
+
+- **Responsive Design** – Fully optimized for desktop, tablet, and mobile users.
+- **Firebase Authentication** – Secure login and registration (Email/Password + Google Sign-In).
+- **Dynamic Routing** – Built using React Router DOM for smooth page transitions.
+- **Private Routes** – Protects user-specific pages like Profile and Booking.
+- **Customer's Review** – Customer's who used the plant's gives review about the plants.
+- **Booking Form** – Users can book consultation sessions with experts.
+- **Toast Notifications** – Instant user feedback for actions like booking or login.
+- **Error Handling** – Custom 404 page for a polished UX.
+
+---
+
+## ⚙️ Technologies & NPM Packages Used
+
+### Frontend:
+
+- **React.js** – UI framework for building the app.
+- **Vite** – Fast development build tool.
+- **Tailwind CSS** – For modern, responsive, and clean design.
+- **React Router DOM** – For handling client-side navigation.
+
+### Authentication & Backend:
+
+- **Firebase** – For authentication and hosting.
+
+### UI Enhancements:
+
+- **React Toastify** – For toast notifications.
+- **Lucide-React / React Icons** – For beautiful icons.
