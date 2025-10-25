@@ -4,6 +4,7 @@ import "./styles.css";
 import { Link, NavLink, useNavigate } from "react-router";
 import { AuthContext } from "../Provider/AuthContext";
 import { toast } from "react-toastify";
+import userImg from "../assets/user.png";
 
 const Header = () => {
   const { user, signOutUser } = use(AuthContext);
@@ -36,7 +37,7 @@ const Header = () => {
     </>
   );
   return (
-    <div className="navbar bg-base-100 shadow-sm p-7">
+    <div className="navbar bg-base-100 shadow-sm p-7 flex flex-col-reverse md:flex-row">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -72,7 +73,16 @@ const Header = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{links}</ul>
       </div>
-      <div className="navbar-end btn-success">
+
+      <div className="navbar-end btn-success flex items-center ">
+        <h2 className="mr-2 font-bold text-secondary">
+          {user ? user?.displayName : ""}
+        </h2>
+        <img
+          className="mr-2 h-13 object-cover w-13 rounded-full "
+          src={user ? user.photoURL : userImg}
+          alt="user image"
+        />
         {user ? (
           <button onClick={handleSignOut} className="btn">
             Log Out
@@ -80,6 +90,13 @@ const Header = () => {
         ) : (
           <Link className="btn" to="/auth/login">
             Login
+          </Link>
+        )}
+        {user ? (
+          ""
+        ) : (
+          <Link to="/auth/register" className="btn btn-primary ml-2">
+            Register
           </Link>
         )}
       </div>
