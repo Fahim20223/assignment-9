@@ -121,9 +121,7 @@ const Register = () => {
               {passwordError && (
                 <p className="text-xs text-error">{passwordError}</p>
               )}
-              <div>
-                <a className="link link-hover">Forgot password?</a>
-              </div>
+
               <button type="submit" className="btn btn-neutral mt-4">
                 Register
               </button>
