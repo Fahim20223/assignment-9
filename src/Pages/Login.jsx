@@ -22,7 +22,7 @@ const Login = () => {
     const password = e.target.password.value;
     signInUser(email, password)
       .then((result) => {
-        console.log(result.user);
+        // console.log(result.user);
         e.target.reset();
         navigate(`${location?.state ? location.state : "/"}`);
       })
@@ -35,7 +35,7 @@ const Login = () => {
   const handleGoogleSignIn = () => {
     signInWithGoogle()
       .then((result) => {
-        console.log(result.user);
+        // console.log(result.user);
         navigate(`${location?.state ? location.state : "/"}`);
       })
       .catch((error) => {

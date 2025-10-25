@@ -35,7 +35,7 @@ const Register = () => {
     }
     createUser(email, password)
       .then((result) => {
-        console.log(result.user);
+        // console.log(result.user);
         // setUser(result.user);
         navigate("/");
         updateUser({ displayName: name, photoURL: photo, email: email })
@@ -54,14 +54,14 @@ const Register = () => {
       })
       .catch((error) => {
         console.log(error);
-        toast.success(error.message);
+        toast.error(error.message);
       });
   };
 
   const handleGoogleSignIn = () => {
     signInWithGoogle()
       .then((result) => {
-        console.log(result.user);
+        // console.log(result.user);
         navigate("/");
       })
       .catch((error) => {

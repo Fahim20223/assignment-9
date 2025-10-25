@@ -4,7 +4,7 @@ const reviewPromise = fetch("/review.json").then((res) => res.json());
 const CustomerReview = () => {
   const review = use(reviewPromise);
   return (
-    <div className="py-16 bg-gray-50">
+    <div className="py-16 bg-gray-100">
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-3xl font-bold mb-2">Customers Review</h2>
         <p className="text-gray-500 mb-10">
