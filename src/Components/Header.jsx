@@ -84,18 +84,27 @@ const Header = () => {
           alt="user image"
         />
         {user ? (
-          <button onClick={handleSignOut} className="btn">
+          <button
+            onClick={handleSignOut}
+            className="btn bg-linear-to-r from-green-500 to-green-700 text-white "
+          >
             Log Out
           </button>
         ) : (
-          <Link className="btn" to="/auth/login">
+          <Link
+            className="btn bg-linear-to-r from-green-500 to-green-700 text-white "
+            to="/auth/login"
+          >
             Login
           </Link>
         )}
         {user ? (
           ""
         ) : (
-          <Link to="/auth/register" className="btn btn-primary ml-2">
+          <Link
+            to="/auth/register"
+            className="btn bg-linear-to-r from-green-500 to-green-700 text-white  ml-2"
+          >
             Register
           </Link>
         )}
