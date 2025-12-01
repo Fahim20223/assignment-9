@@ -2,7 +2,7 @@ import React from "react";
 import HeroSection from "./HeroSection";
 import PlantsCategory from "./PlantsCategory";
 import { useLoaderData } from "react-router";
-import RightAside from "./RightAside";
+// import RightAside from "./RightAside";
 import PlantsCareTips from "./PlantsCareTips";
 import PlantsExperts from "./PlantsExperts";
 import CustomerReview from "./CustomerReview";
