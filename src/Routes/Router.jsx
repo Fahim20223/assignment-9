@@ -56,11 +56,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/card-details/:id",
-    element: (
-      <PrivateRoutes>
-        <PlantsDetails></PlantsDetails>
-      </PrivateRoutes>
-    ),
+    element: <PlantsDetails></PlantsDetails>,
     errorElement: <Error></Error>,
     loader: () => fetch("/plant.json"),
     hydrateFallbackElement: <Loading></Loading>,

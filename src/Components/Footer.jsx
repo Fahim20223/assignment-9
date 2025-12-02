@@ -1,7 +1,7 @@
 import React from "react";
 import { FaInstagram, FaPinterest } from "react-icons/fa";
 import logoImg from "../assets/logo.png";
-
+import logoImg2 from "../assets/logo1.png";
 const Footer = () => {
   return (
     <div>
@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="flex">
           <img
             className="w-15 h-15 mr-2 object-cover rounded-full"
-            src={logoImg}
+            src={logoImg2}
             alt=""
           />
           <nav className="grid grid-flow-col gap-4">

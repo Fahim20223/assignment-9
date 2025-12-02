@@ -16,5 +16,11 @@
     "title": "Fertilizing Advice",
     "description": "Use organic fertilizer once every 2–3 months to promote healthy growth and lush leaves.",
     "icon": "🌿"
+  },
+  {
+    "id": 4,
+    "title": "Proper Airflow",
+    "description": "Ensure good airflow around your plants to prevent mold and pests. Avoid placing them in overly crowded spaces.",
+    "icon": "🍃"
   }
 ]

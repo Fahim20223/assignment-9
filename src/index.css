@@ -7,3 +7,6 @@
   default: true;
   --color-secondary: #d72050;
 }
+body {
+  background-color: #f6f6f6;
+}

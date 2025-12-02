@@ -16,7 +16,7 @@ const Home = () => {
     <div>
       <HeroSection></HeroSection>
 
-      <section className="bg-[#f6f6f6] pb-10">
+      <section className="pb-10">
         <section className="w-11/12 mx-auto ">
           <PlantsCategory data={data}></PlantsCategory>
         </section>

@@ -1,5 +1,5 @@
 import React, { use, useState, useEffect } from "react";
-import logoImg from "../assets/logo.png";
+import logoImg from "../assets/logo1.png";
 import "./styles.css";
 import { Link, NavLink, useNavigate } from "react-router";
 import { AuthContext } from "../Provider/AuthContext";
@@ -40,7 +40,7 @@ const Header = () => {
 
   return (
     <div>
-      <div className="navbar bg-base-100 shadow-sm px-8 py-4">
+      <div className="navbar bg-base-100 shadow-sm px-9 py-4">
         {/* LEFT (LOGO + MOBILE MENU) */}
         <div className="navbar-start">
           {/* Mobile menu */}
@@ -73,10 +73,10 @@ const Header = () => {
           {/* LOGO */}
           <Link
             to={"/"}
-            className="text-2xl font-bold text-green-600 flex items-center gap-2"
+            className="text-2xl font-bold text-green-600 flex items-center ml-1"
           >
             <img src={logoImg} alt="Logo" className="w-15 -" />
-            <spn className="-ms-5">GreenNest</spn>
+            <spn className="">GreenNest</spn>
           </Link>
         </div>
 
@@ -114,10 +114,16 @@ const Header = () => {
             </div>
           ) : (
             <>
-              <Link className="btn btn-outline btn-sm mr-2" to="/auth/login">
+              <Link
+                className="btn bg-green-600 font-bold text-white btn-sm  mr-2"
+                to="/auth/login"
+              >
                 Login
               </Link>
-              <Link className="btn bg-green-500 btn-sm" to="/auth/register">
+              <Link
+                className="btn bg-green-600 font-bold text-white btn-sm  mr-2"
+                to="/auth/register"
+              >
                 Register
               </Link>
             </>
