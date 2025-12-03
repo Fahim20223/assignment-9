@@ -36,7 +36,7 @@ const Profile = () => {
             {/* You can open the modal using document.getElementById('ID').showModal() method */}
             <button
               type="submit"
-              className="mt-2 text-center btn btn-outline btn-success"
+              className="mt-2 text-center btn  bg-green-600 text-white"
               onClick={() => document.getElementById("my_modal_3").showModal()}
             >
               Update Profile
@@ -68,7 +68,10 @@ const Profile = () => {
                       placeholder="photo URL"
                       defaultValue={user?.photoURL}
                     />
-                    <button type="submit" className="btn btn-primary">
+                    <button
+                      type="submit"
+                      className="btn bg-green-600 text-white"
+                    >
                       Submit
                     </button>
                   </fieldset>

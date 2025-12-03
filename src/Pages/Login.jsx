@@ -88,14 +88,17 @@ const Login = () => {
                 <a className="link link-hover">Forgot password?</a>
               </div>
               {error && <p className="text-red-500 font-semibold">{error}</p>}
-              <button type="submit" className="btn btn-neutral mt-4">
+              <button
+                type="submit"
+                className="btn bg-green-600 text-white rounded-lg"
+              >
                 Login
               </button>
             </fieldset>
             <div className="divider divider-success">OR</div>
             <button
               onClick={handleGoogleSignIn}
-              className="btn btn-outline w-full btn-secondary"
+              className="btn btn-outline w-full rounded-lg"
             >
               <FcGoogle size={20}></FcGoogle> Log in With Google
             </button>

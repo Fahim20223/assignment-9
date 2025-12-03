@@ -30,6 +30,13 @@ const Header = () => {
       <li className="mr-2">
         <NavLink to="/plants">Plants</NavLink>
       </li>
+      <li className="mr-2">
+        <NavLink to="/about">About Us</NavLink>
+      </li>
+      <li className="mr-2">
+        <NavLink to="/contact">Contact Us</NavLink>
+      </li>
+
       {user && (
         <li className="mr-2">
           <NavLink to="/profile">My Profile</NavLink>
@@ -39,8 +46,8 @@ const Header = () => {
   );
 
   return (
-    <div>
-      <div className="navbar bg-base-100 shadow-sm px-9 py-4">
+    <div className="sticky top-0 z-50 bg-base-100 shadow-sm">
+      <div className="navbar max-w-7xl mx-auto">
         {/* LEFT (LOGO + MOBILE MENU) */}
         <div className="navbar-start">
           {/* Mobile menu */}
@@ -105,7 +112,7 @@ const Header = () => {
 
                   <button
                     onClick={handleSignOut}
-                    className="btn hover:bg-yellow-500 btn-sm w-full text-black font-bold"
+                    className="btn bg-green-600 btn-sm w-full text-white font-bold rounded-lg"
                   >
                     Logout
                   </button>
@@ -115,13 +122,13 @@ const Header = () => {
           ) : (
             <>
               <Link
-                className="btn bg-green-600 font-bold text-white btn-sm  mr-2"
+                className="btn bg-green-600 text-white btn-sm  mr-2 rounded-lg"
                 to="/auth/login"
               >
                 Login
               </Link>
               <Link
-                className="btn bg-green-600 font-bold text-white btn-sm  mr-2"
+                className="btn bg-green-600 text-white btn-sm rounded-lg mr-2"
                 to="/auth/register"
               >
                 Register

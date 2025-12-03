@@ -122,14 +122,17 @@ const Register = () => {
                 <p className="text-xs text-error">{passwordError}</p>
               )}
 
-              <button type="submit" className="btn btn-neutral mt-4">
+              <button
+                type="submit"
+                className="btn bg-green-600 text-white font-bold mt-4 rounded-lg"
+              >
                 Register
               </button>
             </fieldset>
             <div className="divider divider-success">OR</div>
             <button
               onClick={handleGoogleSignIn}
-              className="btn btn-outline w-full btn-secondary"
+              className="btn btn-outline w-full rounded-lg"
             >
               <FcGoogle size={20}></FcGoogle> Signup With Google
             </button>

@@ -5,7 +5,7 @@ import logoImg2 from "../assets/logo1.png";
 const Footer = () => {
   return (
     <div>
-      <footer className="footer footer-horizontal footer-center bg-linear-to-r from-lime-300 via-green-400 to-emerald-600 text-base-content rounded p-10">
+      <footer className="footer footer-horizontal footer-center bg-linear-to-r from-green-500 to-green-700 text-base-content rounded p-10">
         <div className="flex">
           <img
             className="w-15 h-15 mr-2 object-cover rounded-full"

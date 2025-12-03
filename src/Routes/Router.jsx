@@ -10,6 +10,8 @@ import PlantsDetails from "../Pages/PlantsDetails";
 import PrivateRoutes from "../PrivateRoutes/PrivateRoutes";
 import Loading from "../Pages/Loading";
 import Error from "../Pages/Error";
+import AboutUs from "../Components/AboutUs";
+import Contact from "../Components/Contact";
 
 const router = createBrowserRouter([
   {
@@ -37,6 +39,14 @@ const router = createBrowserRouter([
           </PrivateRoutes>
         ),
       },
+      {
+        path: "/about",
+        element: <AboutUs></AboutUs>,
+      },
+      {
+        path: "/contact",
+        element: <Contact></Contact>,
+      },
     ],
   },
   {
@@ -62,6 +72,7 @@ const router = createBrowserRouter([
     hydrateFallbackElement: <Loading></Loading>,
   },
   // {
+
   //   path: "/*",
   //   errorElement: <Error></Error>,
   // },
