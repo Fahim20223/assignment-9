@@ -10,8 +10,8 @@ const HeroSection = () => {
   const slides = use(slidePromise);
 
   return (
-    <div className="max-w-7xl mx-auto rounded-3xl overflow-hidden my-8">
-      <div className="relative w-full bg-linear-to-r from-green-100 via-green-200  to-green-400 flex items-center justify-center overflow-hidden shadow-md pt-30">
+    <div className="max-w-7xl mx-auto my-8 pt-19">
+      <div className="relative w-full bg-linear-to-r from-green-100 via-green-200  to-green-400 flex items-center justify-center overflow-hidden shadow-md pt-30 rounded-3xl">
         <Swiper
           spaceBetween={30}
           centeredSlides

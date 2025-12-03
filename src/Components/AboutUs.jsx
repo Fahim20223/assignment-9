@@ -3,7 +3,7 @@ import { Leaf, Sprout, Users } from "lucide-react";
 
 const AboutUs = () => {
   return (
-    <div className="max-w-7xl mx-auto px-6 py-16 min-h-[63vh]">
+    <div className="max-w-7xl mx-auto px-6 py-16 min-h-[80vh] pt-40">
       <h1 className="text-4xl font-semibold text-green-700 mb-4">
         About GreenNest
       </h1>

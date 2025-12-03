@@ -32,7 +32,7 @@ const ContactUs = () => {
   };
 
   return (
-    <div className="max-w-6xl mx-auto px-6 py-16">
+    <div className="max-w-6xl mx-auto px-6 py-16 pt-28 min-h-[80vh]">
       <h1 className="text-4xl font-semibold text-green-700 mb-4">Contact Us</h1>
       <p className="text-gray-600 mb-10">
         Have questions or need help? We'd love to hear from you!

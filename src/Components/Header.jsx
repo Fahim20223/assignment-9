@@ -46,7 +46,7 @@ const Header = () => {
   );
 
   return (
-    <div className="sticky top-0 z-50 bg-base-100 shadow-sm">
+    <div className="bg-base-100 shadow-sm fixed w-full top-0 z-50">
       <div className="navbar max-w-7xl mx-auto">
         {/* LEFT (LOGO + MOBILE MENU) */}
         <div className="navbar-start">
@@ -138,6 +138,7 @@ const Header = () => {
         </div>
       </div>
     </div>
+    // <div className="sticky top-0 bg-red-400 h-64 z-50">test</div>
   );
 };
 
