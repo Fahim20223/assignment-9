@@ -37,7 +37,7 @@ const AllPlantsShowCard = ({ plant }) => {
         {/* Action Button */}
         <Link to={`/card-details/${plantId}`} className="mt-4">
           <button className="btn w-full py-2 text-white rounded-full bg-linear-to-r from-green-500 to-green-700 hover:from-green-600 hover:to-green-800 transition-all duration-300">
-            View Details
+            See More
           </button>
         </Link>
       </div>
