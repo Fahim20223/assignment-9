@@ -25,10 +25,8 @@ const Plants = () => {
     if (sortOrder === "name-asc") return a.plantName.localeCompare(b.plantName);
     if (sortOrder === "name-desc")
       return b.plantName.localeCompare(a.plantName);
-    if (sortOrder === "rating-4.5-4.7")
-      return a.rating >= 4.5 && a.rating <= 4.7 ? -1 : 1; // Plants in range come first
-    if (sortOrder === "rating-4.7-5")
-      return a.rating >= 4.7 && a.rating <= 5 ? -1 : 1; // Plants in range come first
+    if (sortOrder === "rating-asc") return a.rating - b.rating; // Low → High
+    if (sortOrder === "rating-desc") return b.rating - a.rating; // High → Low
     return 0;
   });
 
@@ -92,8 +90,8 @@ const Plants = () => {
               <option value="price-desc">Price: High → Low</option>
               <option value="name-asc">Name: A → Z</option>
               <option value="name-desc">Name: Z → A</option>
-              <option value="rating-4.5-4.7">Rating: 4.5 → 4.7</option>
-              <option value="rating-4.7-5">Rating: 4.7 → 5</option>
+              <option value="rating-asc">Rating: Low → High</option>
+              <option value="rating-desc">Rating: High → Low</option>
             </select>
           </div>
         </div>

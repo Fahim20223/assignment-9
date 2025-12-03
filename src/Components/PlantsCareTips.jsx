@@ -4,7 +4,7 @@ const PlantsCareTips = () => {
   const tips = use(tipsPromise);
   return (
     <div className="py-10 bg-linear-to-r from-green-50 to-green-100">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto w-[90%]">
         <h2 className="text-3xl font-bold text-center text-green-800 mb-10">
           🌼 Plant Care Tips
         </h2>

@@ -5,7 +5,7 @@ const PlantsExperts = () => {
   const experts = use(expertsPromise);
   return (
     <div className="py-10 bg-linear-to-r from-green-100 to-green-50">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto w-[90%]">
         <h2 className="text-3xl font-bold text-center text-green-800 mb-10">
           👩‍🌾 Meet Our Green Experts
         </h2>
